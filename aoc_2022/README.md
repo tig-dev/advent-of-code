@@ -1,21 +1,15 @@
-# Aoc2022
+# Advent of Code 2022
 
-**TODO: Add description**
+Please see the [Advent of Code website](https://adventofcode.com/) for more information.
 
-## Installation
+## Install Elixir
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `aoc_2022` to your list of dependencies in `mix.exs`:
+See [Installing Elixir](https://elixir-lang.org/install.html).
 
-```elixir
-def deps do
-  [
-    {:aoc_2022, "~> 0.1.0"}
-  ]
-end
+## Run a Puzzle Script
+
+```bash
+elixir <PUZZLE FILE>
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/aoc_2022>.
-
+> To run interactively, use `iex` instead of `elixir`.
