@@ -27,7 +27,7 @@ defmodule Calories do
       |> Enum.sum()
 end
 
-inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_1.txt")
+inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_1.txt") |> String.trim_trailing
 
 Calories.get_highest(inputs) |> IO.inspect(label: "Part 1")
 Calories.get_highest(inputs, 3) |> IO.inspect(label: "Part 2")

@@ -44,7 +44,7 @@ defmodule Cleanup do
   end
 end
 
-inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_4.txt")
+inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_4.txt") |> String.trim_trailing
 
 Cleanup.get_total_complete_overlaps(inputs) |> IO.inspect(label: "Part 1")
 Cleanup.get_total_overlaps(inputs) |> IO.inspect(label: "Part 2")

@@ -87,7 +87,7 @@ defmodule Roshambo do
   end
 end
 
-inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_2.txt")
+inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_2.txt") |> String.trim_trailing
 
 Roshambo.get_total_score(inputs, "actions") |> IO.inspect(label: "Part 1")
 Roshambo.get_total_score(inputs, "outcomes") |> IO.inspect(label: "Part 2")

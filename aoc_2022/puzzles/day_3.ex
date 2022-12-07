@@ -56,7 +56,7 @@ defmodule Rucksacks do
   end
 end
 
-inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_3.txt")
+inputs = File.read!(File.cwd!() <> "/puzzles/inputs/day_3.txt") |> String.trim_trailing
 
 Rucksacks.get_total_matching_priorities(inputs) |> IO.inspect(label: "Part 1")
 Rucksacks.get_total_badge_priorities(inputs) |> IO.inspect(label: "Part 2")
